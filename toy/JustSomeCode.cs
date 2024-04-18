@@ -3,21 +3,15 @@ using System.ComponentModel.DataAnnotations;
 public class Code
 {
 
+// This method returns true if value exists in matric,
+// false otherwise
   public static bool ExistsIn(int[,] matrix, int value)
   {
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-      for (int j = 0; j < matrix.GetLength(1); j++)
-      {
-        if (matrix[i, j] == value)
-        {
-          return true;
-        }
-      }
-    }
+    // TODO: Fix this :-)
     return false;
   }
 
+// This method returns the transposed matrix
   public static int[,] Transpose(int[,] matrix)
   {
     // TODO: Fix this :-)
