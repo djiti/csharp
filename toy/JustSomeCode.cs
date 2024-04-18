@@ -3,18 +3,25 @@ using System.ComponentModel.DataAnnotations;
 public class Code
 {
 
-// This method returns true if value exists in matric,
-// false otherwise
+  // Returns true if value exists in matric,
+  // false otherwise
   public static bool ExistsIn(int[,] matrix, int value)
   {
-    // TODO: Fix this :-)
+    // TODO: Implement this :-)
     return false;
   }
 
-// This method returns the transposed matrix
+  // Returns the transposed matrix
   public static int[,] Transpose(int[,] matrix)
   {
-    // TODO: Fix this :-)
+    // TODO: Implement this :-)
+    return new int[,] { { } };
+  }
+
+  // Returns the product of the matrices
+  public static int[,] Product(int[,] a, int[,] b)
+  {
+    // TODO: Implement this :-)
     return new int[,] { { } };
   }
 }

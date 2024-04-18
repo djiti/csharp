@@ -24,4 +24,22 @@ public class MathUtilTests
     int[,] transposedArray = new int[,] { { 1, 4, 7 }, { 2, 5, 8 }, { 3, 5, 9 } };
     Assert.Equal(transposedArray, Code.Transpose(myArray));
   }
+
+  [Fact]
+  public void Product_One_By_One()
+  {
+    int[,] a = new int[,] { { 4 } };
+    int[,] b = new int[,] { { 2 } };
+    int[,] ab = new int[,] { { 8 } };
+    Assert.Equal(ab, Code.Product(a, b));
+  }
+
+  [Fact]
+  public void Product_Two_By_Two()
+  {
+    int[,] a = new int[,] { { 4, 5 }, { 6, 7 } };
+    int[,] b = new int[,] { { 8, 9 }, { 10, 11 } };
+    int[,] ab = new int[,] { { 82, 91 }, { 118, 131 } };
+    Assert.Equal(ab, Code.Product(a, b));
+  }
 }
