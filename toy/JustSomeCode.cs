@@ -24,4 +24,12 @@ public class Code
     // TODO: Implement this :-)
     return new int[,] { { } };
   }
+
+  // Returns whether this is a magic square
+  // (sum of columns = sum of rows = sum of diagonals)
+  public static bool IsMagicSquare(int[,] a)
+  {
+    // TODO: Implement this :-)
+    return false;
+  }
 }

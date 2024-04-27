@@ -42,4 +42,39 @@ public class MathUtilTests
     int[,] ab = new int[,] { { 82, 91 }, { 118, 131 } };
     Assert.Equal(ab, Code.Product(a, b));
   }
+
+  [Fact]
+  public void IsMagicSquareTrue()
+  {
+    int[,] a = new int[,] {
+      {16, 2, 3, 13},
+      {5, 11, 10, 8},
+      {9, 7, 6, 12},
+      {4, 14, 15, 1}};
+    int[,] b = new int[,] {
+      {8, 1, 6},
+      {3, 5, 7},
+      {4, 9, 2}
+    };
+    Assert.True(Code.IsMagicSquare(a));
+    Assert.True(Code.IsMagicSquare(b));
+  }
+
+  [Fact]
+  public void IsMagicSquareFalse()
+  {
+    int[,] a = new int[,] {
+      {16, 2, 3, 13},
+      {5, 11, 10, 8},
+      {9, 7, 6, 12},
+      {4, 14, 15, 0}};
+    int[,] b = new int[,] {
+      {8, 1, 6},
+      {3, 5, 7},
+      {4, 9, 1}
+    };
+    Assert.False(Code.IsMagicSquare(a));
+    Assert.False(Code.IsMagicSquare(b));
+  }
+
 }
