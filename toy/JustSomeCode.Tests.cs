@@ -77,4 +77,19 @@ public class MathUtilTests
     Assert.False(Code.IsMagicSquare(b));
   }
 
+  [Fact]
+  public void IsBubbleSorted()
+  {
+    int Min = 0;
+    int Max = 200;
+    int Elements = 6;
+    Random randNum = new Random();
+    int[] a = Enumerable
+        .Repeat(0, Elements)
+        .Select(i => randNum.Next(Min, Max))
+        .ToArray();
+    int[] sortedA = (int[])a.Clone();
+    Array.Sort(sortedA);
+    Assert.Equal(sortedA, Code.BubbleSorted(a));
+  }
 }
