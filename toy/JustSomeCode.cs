@@ -39,7 +39,7 @@ public class Code
   //      pour j allant de 0 à i-1
   //          si T[j+1] < T[j]
   //              (T[j+1], T[j]) ← (T[j], T[j+1])
-  public static int[] BubbleSorted(int[] a)
+  public static int[] BubbleSort(int[] a)
   {
     // TODO: Implement this :-)
     return Array.Empty<int>();

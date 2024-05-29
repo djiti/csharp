@@ -90,6 +90,6 @@ public class MathUtilTests
         .ToArray();
     int[] sortedA = (int[])a.Clone();
     Array.Sort(sortedA);
-    Assert.Equal(sortedA, Code.BubbleSorted(a));
+    Assert.Equal(sortedA, Code.BubbleSort(a));
   }
 }
